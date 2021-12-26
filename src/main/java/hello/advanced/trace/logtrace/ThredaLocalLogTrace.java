@@ -29,7 +29,7 @@ public class ThredaLocalLogTrace implements LogTrace{
 		if (traceid == null) {
 			traceIdHolder.set(new TraceId());
 		} else {
-			traceIdHolder.set(traceid);
+			traceIdHolder.set(traceid.createNextId());
 		}
 	}
 
