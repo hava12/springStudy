@@ -16,12 +16,12 @@ public class OrderControllerV2 {
         this.orderService = orderService;
     }
 
-    @GetMapping("/proxy/v2/request")
+    @GetMapping("/v2/request")
     public String request(String itemId) {
         return orderService.orderItem(itemId);
     }
 
-    @GetMapping("/proxy/v2/no-log")
+    @GetMapping("/v2/no-log")
     public String noLog() {
         return null;
     }
