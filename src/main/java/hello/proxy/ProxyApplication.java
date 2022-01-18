@@ -2,6 +2,7 @@ package hello.proxy;
 
 import hello.advanced.trace.logtrace.LogTrace;
 import hello.advanced.trace.logtrace.ThredaLocalLogTrace;
+import hello.proxy.app.v4.BeanPostProcessorConfig;
 import hello.proxy.config.AppV1Config;
 import hello.proxy.config.AppV2Config;
 import hello.proxy.config.v1_proxy.ConcreteProxyConfig;
@@ -21,7 +22,8 @@ import org.springframework.context.annotation.Import;
 // @Import({ConcreteProxyConfig.class})
 // @Import({DynamicProxtFilterConfig.class})
 // @Import({ProxyFactoryConfigV1.class})
-@Import({ProxyFactoryConfigV2.class})
+// @Import({ProxyFactoryConfigV2.class})
+@Import({BeanPostProcessorConfig.class})
 @SpringBootApplication(scanBasePackages = "hello.proxy.app")
 public class ProxyApplication {
 
