@@ -1,5 +1,7 @@
 package hello.proxy.app.v3;
 
+import org.springframework.cache.annotation.EnableCaching;
+import org.springframework.scheduling.annotation.EnableAsync;
 import org.springframework.stereotype.Repository;
 
 @Repository
