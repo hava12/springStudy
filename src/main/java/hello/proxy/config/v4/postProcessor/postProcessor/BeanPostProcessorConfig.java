@@ -1,7 +1,7 @@
-package hello.proxy.app.v4;
+package hello.proxy.config.v4.postProcessor.postProcessor;
 
 import hello.advanced.trace.logtrace.LogTrace;
-import hello.proxy.app.v4.postProcessor.PackageLogTracePostProcessor;
+import hello.proxy.config.v4.postProcessor.postProcessor.PackageLogTracePostProcessor;
 import hello.proxy.config.AppV1Config;
 import hello.proxy.config.AppV2Config;
 import hello.proxy.config.v3_proxyfactory.advice.LogTraceAdvice;
@@ -10,7 +10,6 @@ import org.springframework.aop.Advisor;
 import org.springframework.aop.support.DefaultPointcutAdvisor;
 import org.springframework.aop.support.NameMatchMethodPointcut;
 import org.springframework.context.annotation.Bean;
-import org.springframework.context.annotation.Configuration;
 import org.springframework.context.annotation.Import;
 
 @Slf4j

@@ -1,10 +1,9 @@
-package hello.proxy.app.v5.autoproxy;
+package hello.proxy.config.v5.autoproxy;
 
 import hello.advanced.trace.logtrace.LogTrace;
 import hello.proxy.config.AppV1Config;
 import hello.proxy.config.AppV2Config;
 import hello.proxy.config.v3_proxyfactory.advice.LogTraceAdvice;
-import lombok.extern.slf4j.Slf4j;
 import org.springframework.aop.Advisor;
 import org.springframework.aop.aspectj.AspectJExpressionPointcut;
 import org.springframework.aop.support.DefaultPointcutAdvisor;
