@@ -8,6 +8,7 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Import;
 
+@SpringBootApplication(scanBasePackages = "hello.aop")
 public class AopApplication {
 
 	public static void main(String[] args) {
