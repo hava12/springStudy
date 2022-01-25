@@ -90,4 +90,16 @@ public class ExecutionTest {
 		pointcut.setExpression("execution(* hello.aop..*.*(..))");
 		assertThat(pointcut.matches(helloMethod, MemberServiceImpl.class)).isTrue();
 	}
+
+	@Test
+	void typeExactMatch() {
+		pointcut.setExpression("execution(* hello.aop.member.MemberServiceImpl .*(..))");
+		assertThat(pointcut.matches(helloMethod, MemberServiceImpl.class)).isTrue();
+	}
+
+	@Test
+	void typeMatchSuperType() {
+		pointcut.setExpression("execution(* hello.aop.member.MemberService .*(..))");
+		assertThat(pointcut.matches(helloMethod, MemberServiceImpl.class)).isTrue();
+	}
 }
